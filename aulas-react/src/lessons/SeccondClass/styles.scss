@@ -1,0 +1,14 @@
+.header-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 2rem 3rem;
+
+  .img-component {
+    width: 70rem;
+    height: 20rem;
+    border-radius: 0.35rem;
+    box-shadow: #dadae433 0px 7px 29px 0px;
+  }
+}
