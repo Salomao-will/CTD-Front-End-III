@@ -6,6 +6,7 @@ import { ThirdClass } from './lessons/ThirdClass'
 
 import { InstagramTimeLine } from "./challenges/IntagramTimeLine"
 import { DHGames } from './pages/DHGames'
+import { SevenClass } from './lessons/SevenClass'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       <FourthClass />
       <FifthClass /> */}
       {/* <InstagramTimeLine /> */}
-      <DHGames />
+      {/* <DHGames /> */}
+      <SevenClass />
     </>
   )
 }
