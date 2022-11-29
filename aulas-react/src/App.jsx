@@ -1,4 +1,10 @@
-import './App.css'
+
+import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+
 import { FifthClass } from './lessons/FifthClass'
 import { FourthClass } from './lessons/FourthClass'
 import { SeccondClass } from './lessons/SeccondClass'
@@ -7,18 +13,22 @@ import { ThirdClass } from './lessons/ThirdClass'
 import { InstagramTimeLine } from "./challenges/IntagramTimeLine"
 import { DHGames } from './pages/DHGames'
 import { SevenClass } from './lessons/SevenClass'
+import { ThirteenthClass } from './lessons/ThirteenthClass'
+import { FifteenClass } from "./lessons/FifteenthClass";
+import { FourteenthClass } from "./lessons/FourteenthClass";
 
 function App() {
 
+  const appRouter = createBrowserRouter([
+    {
+      path: '',
+      element: <FifteenClass />
+    }
+  ])
+
   return (
     <>
-      {/* <SeccondClass />
-      <ThirdClass />
-      <FourthClass />
-      <FifthClass /> */}
-      {/* <InstagramTimeLine /> */}
-      {/* <DHGames /> */}
-      <SevenClass />
+      <RouterProvider router={appRouter} />
     </>
   )
 }
