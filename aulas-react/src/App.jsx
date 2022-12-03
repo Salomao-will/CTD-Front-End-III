@@ -16,13 +16,48 @@ import { SevenClass } from './lessons/SevenClass'
 import { ThirteenthClass } from './lessons/ThirteenthClass'
 import { FifteenClass } from "./lessons/FifteenthClass";
 import { FourteenthClass } from "./lessons/FourteenthClass";
+import { MainLayout } from "./components/MainLayout";
 
 function App() {
 
   const appRouter = createBrowserRouter([
     {
       path: '',
-      element: <FifteenClass />
+      element: <MainLayout />,
+      children: [
+        {
+          path: 'seccondClas',
+          element: <SeccondClass />
+        },
+        {
+          path:'thirdClass',
+          element: <ThirdClass />
+        },
+        {
+          path:'fourClass',
+          element: <FourthClass />
+        },
+        {
+          path:'fifthClass',
+          element: <FifthClass />
+        },
+        {
+          path:'sevenClass',
+          element: <SevenClass />
+        },
+        {
+          path:'thirteenthClass',
+          element: <ThirteenthClass />
+        },
+        {
+          path:'fourteenthClass',
+          element: <FourteenthClass />
+        },
+        {
+          path:'fifteenthClass',
+          element: <FifteenClass />
+        }
+      ]
     }
   ])
 
